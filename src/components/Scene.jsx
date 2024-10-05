@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import  Model from "./Behemoth";
+import  Model from "./Model";
 import { OrbitControls } from "@react-three/drei";
 import { Skybox } from "./Skybox";
 import { Floor } from "./Floor";

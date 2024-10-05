@@ -12,7 +12,7 @@ export default function Model({ initialPosition, ...props }) {
 
   const group = useRef();
 
-  const gltf = useLoader(GLTFLoader, "/assets/reaper/scene.gltf");
+  const gltf = useLoader(GLTFLoader, "/assets/robot_ant/scene.gltf");
 
   const scene = useMemo(() => clone(gltf.scene), [gltf]);
   const animations = useMemo(() => gltf.animations, [gltf]);
@@ -53,7 +53,7 @@ export default function Model({ initialPosition, ...props }) {
       group.current.position.y,
       group.current.position.z + direction.z
     );
-    
+
     // Check boundaries and invert direction if needed
     if (group.current.position.x >= 25 || group.current.position.x <= -25) {
       direction.x *= -1; // Invert X direction
@@ -65,14 +65,14 @@ export default function Model({ initialPosition, ...props }) {
   });
 
   useEffect(() => {
-    if (actions && actions["Armature|Armature|mixamo.com|Layer0"]) {
-      actions["Armature|Armature|mixamo.com|Layer0"].play();
+    if (actions && actions["Walk"]) {
+      actions["Walk"].play();
     }
     return () => {
-      if (actions && actions["Armature|Armature|mixamo.com|Layer0"])
-        actions["Armature|Armature|mixamo.com|Layer0"].stop();
+      if (actions && actions["Walk"])
+        actions["Walk"].stop();
     };
   }, [actions, toggleAnimation]);
 
-  return <primitive ref={group} object={scene} />;
+  return <primitive  scale={[0.005, 0.005, 0.005]} ref={group} object={scene} />;
 }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Robot Ant
+* source:	https://sketchfab.com/3d-models/robot-ant-e709d46b96bb4f54b7ed6b03d89f4b60
+* author:	ArachnoBoy (https://sketchfab.com/vang807)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Robot Ant" (https://sketchfab.com/3d-models/robot-ant-e709d46b96bb4f54b7ed6b03d89f4b60) by ArachnoBoy (https://sketchfab.com/vang807) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
